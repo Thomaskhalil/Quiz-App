@@ -14,10 +14,13 @@ class MoodyHome extends StatelessWidget {
 
   static const String routeName = "MoodyHome";
   final List<ExerciseItem> exerciseItems = [
-    ExerciseItem(img: "relaxation_icon", title: "Relaxation"),
-    ExerciseItem(img: "meditation_icon", title: "Meditation"),
-    ExerciseItem(img: "beathing_icon", title: "Beathing"),
-    ExerciseItem(img: "yoga_icon", title: "Yoga"),
+    ExerciseItem(
+        img: "relaxation_icon", title: "Relaxation", color: Color(0xffF9F5FF)),
+    ExerciseItem(
+        img: "meditation_icon", title: "Meditation", color: Color(0xffFDF2FA)),
+    ExerciseItem(
+        img: "beathing_icon", title: "Beathing", color: Color(0xffFFFAF5)),
+    ExerciseItem(img: "yoga_icon", title: "Yoga", color: Color(0xffF0F9FF)),
   ];
 
   @override
@@ -322,7 +325,7 @@ class MoodyHome extends StatelessWidget {
                         return Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8),
-                            color: Color(0xffF9F5FF),
+                            color: item.color,
                           ),
                           height: 12,
                           child: Padding(
@@ -356,6 +359,7 @@ class MoodyHome extends StatelessWidget {
 class ExerciseItem {
   final String img;
   final String title;
+  final Color color;
 
-  ExerciseItem({required this.img, required this.title});
+  ExerciseItem({required this.img, required this.title, required this.color});
 }
