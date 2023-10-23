@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moody/Pages/AliceCare/alice_home.dart';
 import 'package:moody/Pages/Moody/moody_home.dart';
 import 'package:moody/Pages/WorkOut/work_out_home.dart';
 
@@ -26,7 +27,7 @@ class _MyTabsState extends State<MyTabs> {
   final List<Widget> _tabs = [
     MoodyHome(),
     WorkOutHome(),
-    SplashScreen(),
+    AliceHome(),
     SplashScreen(),
   ];
 

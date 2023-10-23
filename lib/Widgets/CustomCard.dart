@@ -16,7 +16,7 @@ class CustomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 16),
+      margin: EdgeInsets.only(top: 16, right: 10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           color: Color(0xffF8F9FC),
@@ -107,7 +107,7 @@ class CustomCard extends StatelessWidget {
             ),
             Expanded(
               child: Image.asset("assets/images/workout/${imagePath}.png"),
-            )
+            ),
           ],
         ),
       ),
