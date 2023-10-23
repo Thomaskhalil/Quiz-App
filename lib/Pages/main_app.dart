@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moody/Pages/Moody/moody_home.dart';
+import 'package:moody/Pages/WorkOut/work_out_home.dart';
 
 //?
 import 'package:moody/Pages/splash_screen.dart';
@@ -24,7 +25,7 @@ class _MyTabsState extends State<MyTabs> {
 
   final List<Widget> _tabs = [
     MoodyHome(),
-    SplashScreen(),
+    WorkOutHome(),
     SplashScreen(),
     SplashScreen(),
   ];
@@ -47,17 +48,17 @@ class _MyTabsState extends State<MyTabs> {
             label: '●',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.grid_view),
+            icon: Icon(Icons.home),
             label: '●',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_today_outlined),
+            icon: Icon(Icons.home),
             label: '●',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_outlined),
-            label: '●',
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.person_outlined),
+          //   label: '●',
+          // ),
         ],
         selectedItemColor: Color(0xff027A48),
         unselectedItemColor: Color(0xff667085),
